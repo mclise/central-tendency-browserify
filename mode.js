@@ -1,8 +1,7 @@
-var mode; 
-var count = 1;
-var tempCount = 1;
-
-var findMode = function(numbers) {
+module.exports = function(numbers) {
+  var mode; 
+  var count = 1;
+  var tempCount = 1;
   for (i = 0; i < numbers.length - 1; i++){
     
     if (numbers[i] === numbers[i + 1]){
@@ -21,5 +20,3 @@ var findMode = function(numbers) {
   return mode;
   }
 };
-
-module.exports = findMode;

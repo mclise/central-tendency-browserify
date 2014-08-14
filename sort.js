@@ -1,9 +1,4 @@
-var sort = function(numbers) {
-  var compare = function(a, b){
-    return (a - b)
-  }
-  numbers.sort(compare);
+module.exports = function(numbers) {
+  numbers.sort(function(a, b){return (a - b)});
   return numbers;
 }
-
-module.exports = sort;

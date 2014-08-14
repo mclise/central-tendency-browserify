@@ -1,6 +1,5 @@
-var median;
-
-var findMedian = function(numbers) {
+module.exports = function(numbers) {
+  var median;
   var mid = numbers.length / 2;
   if (mid % 1 !== 0){
     median = numbers[Math.floor(mid)]
@@ -9,5 +8,3 @@ var findMedian = function(numbers) {
   }
   return median;
 }
-
-module.exports = findMedian;
